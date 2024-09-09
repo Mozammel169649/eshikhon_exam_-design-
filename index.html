@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>first_exam</title>
+  <link rel="icon" href="./assets/image/logo.jpg" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="bg-white">
+  <!--header section start -->
+  <section id="header">
+    <div class="navbar bg-white px-10">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a href="./assets/pages/product.html">Product</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="./assets/pages/contuct.html">Contuct</a></li>
+          </ul>
+        </div>
+        <a href="/" class="btn btn-ghost text-xl text-base-100"><img class="h-11 w-11 rounded-full"
+            src="./assets/image/logo.jpg"> First_Exam</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-base-100">
+          <li><a href="./assets/pages/product.html" >Product</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="./assets/pages/contuct.html">Contuct</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <div class="flex-none gap-2">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <div class="indicator">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              <span class="badge badge-sm indicator-item">0</span>
+            </div>
+          </div>
+        </div>
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img alt="Tailwind CSS Navbar component"
+              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!--header section end -->
+
+  <!--banner section start -->
+  <section id="banner">
+    <div class="px-10">
+      <div class="carousel w-full h-lvh">
+        <div id="slide1" class="carousel-item relative w-full h-full">
+
+          <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+            class="w-full blur-sm" />
+          <div
+            class="absolute  left-10 right-10 sm:left-28 sm:right-28 md:left-36 md:right-36 lg:left-48 lg:right-48  top-1/2 -translate-y-1/2 flex flex-col items-center space-y-8">
+            <h2
+              class="text-center text-base-100 font-semibold leading-relaxed text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+              Stay consistent, embrace challenges, and never stop learning from failures.
+            </h2>
+            <button
+              class="rounded justify-center w-36 h-12  bg-pink-500 text-base-100 text-2xl font-semibold hover:bg-base-100 hover:text-white">subscribe</button>
+          </div>
+
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide3" class="btn bg-white border-none btn-circle">❮</a>
+            <a href="#slide2" class="btn bg-white border-none btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+            class="w-full blur-sm" />
+          <div
+            class="absolute left-10 right-10 sm:left-28 sm:right-28 md:left-36 md:right-36 lg:left-48 lg:right-48 top-1/2 -translate-y-1/2 flex flex-col items-center space-y-8">
+            <h2
+              class="text-center text-base-100 font-semibold leading-relaxed text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+              Stay consistent,
+              embrace challenges, and never stop learning from failures.</h2>
+            <button
+              class="rounded justify-center w-36 h-12 bg-pink-500 text-base-100 text-2xl font-semibold hover:bg-base-100 hover:text-white">subscribe</button>
+          </div>
+
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn bg-white border-none btn-circle">❮</a>
+            <a href="#slide3" class="btn bg-white border-none btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+            class="w-full blur-sm" />
+          <div
+            class="absolute left-10 right-10 sm:left-28 sm:right-28 md:left-36 md:right-36 lg:left-48 lg:right-48 top-1/2 -translate-y-1/2 flex flex-col items-center space-y-8">
+            <h2
+              class="text-center text-base-100 font-semibold leading-relaxed text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+              Stay consistent,
+              embrace challenges, and never stop learning from failures.</h2>
+            <button
+              class="rounded justify-center w-36 h-12 bg-pink-500 text-base-100 text-2xl font-semibold hover:bg-base-100 hover:text-white">subscribe</button>
+          </div>
+
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="btn bg-white border-none btn-circle">❮</a>
+            <a href="#slide1" class="btn bg-white border-none btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!--banner section end -->
+
+  <!--product section start -->
+  <section id="product">
+    <div class="px-10 min-h-auto">
+      <h2 class="text-base-100 text-3xl mt-8 font-semibold  text-center">Products</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 items-center justify-center m-auto">
+        <!-- Card 1 -->
+        <div class="card card-compact bg-base-100 w-80 shadow-xl ">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-around">
+              <p class=" pt-3 text-white font-sans font-semibold text-2xl">Price : <span
+                  class=" text-pink-500">40</span> $</p>
+              <button class="btn btn-primary">Add Card</button>
+            </div>
+          </div>
+        </div>
+        <div class="card card-compact bg-base-100 w-80 shadow-xl">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-around">
+              <p class=" pt-3 text-white font-sans font-semibold text-2xl">Price : <span
+                  class=" text-pink-500">40</span> $</p>
+              <button class="btn btn-primary">Add Card</button>
+            </div>
+          </div>
+        </div>
+        <div class="card card-compact bg-base-100 w-80 shadow-xl">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-around">
+              <p class=" pt-3 text-white font-sans font-semibold text-2xl">Price : <span
+                  class=" text-pink-500">40</span> $</p>
+              <button class="btn btn-primary">Add Card</button>
+            </div>
+          </div>
+        </div>
+        <div class="card card-compact bg-base-100 w-80 shadow-xl">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-around">
+              <p class=" pt-3 text-white font-sans font-semibold text-2xl">Price : <span
+                  class=" text-pink-500">40</span> $</p>
+              <button class="btn btn-primary">Add Card</button>
+            </div>
+          </div>
+        </div>
+        <div class="card card-compact bg-base-100 w-80 shadow-xl">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-around">
+              <p class=" pt-3 text-white font-sans font-semibold text-2xl">Price : <span
+                  class=" text-pink-500">40</span> $</p>
+              <button class="btn btn-primary">Add Card</button>
+            </div>
+          </div>
+        </div>
+        <div class="card card-compact bg-base-100 w-80 shadow-xl">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-around">
+              <p class=" pt-3 text-white font-sans font-semibold text-2xl">Price : <span
+                  class=" text-pink-500">40</span> $</p>
+              <button class="btn btn-primary">Add Card</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--product section end -->
+
+  <!--Category section start -->
+  <section id="Category">
+    <div class="px-10 min-h-auto">
+      <h2 class="text-base-100 text-3xl mt-8 font-semibold  text-center">Category</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 justify-between">
+        <!-- Card 1 -->
+        <div class="card bg-base-100 w-60 shadow-xl">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"
+              class="rounded-xl w-full h-44" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Shoes!</h2>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card bg-base-100 w-60 shadow-xl">
+          <figure>
+            <img src="./assets/image/laptop.jpeg" alt="Laptop" class="rounded-xl w-full h-44" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Laptop!</h2>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card bg-base-100 w-60 shadow-xl">
+          <figure>
+            <img src="./assets/image/phone.jpg" alt="phone" class="rounded-xl w-full h-44" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Phone!</h2>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card bg-base-100 w-60 shadow-xl">
+          <figure>
+            <img src="./assets/image/headphone.jpg" alt="headphone" class="rounded-xl w-full h-44" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Headphone!</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Category section end -->
+
+  <!--about section start -->
+  <section id="about">
+    <div class="px-10 min-h-auto">
+      <h2 class="text-base-100 text-3xl mt-8 font-semibold  text-center">About Us</h2>
+      <div class="flex flex-col md:flex-row justify-between gap-4 mt-8">
+
+        <div class=" w-full md:w-2/3">
+          <div class="w-full sm:w-ful lg:w-4/6 xl:w-4/6">
+            <img class="w-4/6 sm:w-full" src="./assets/image/about.jpg" alt="">
+          </div>
+          <div class="relative" style="top: -20%; left: 30%;">
+            <img class=" h-80" src="./assets/image/kk21.png" alt="">
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/3 p-5">
+          <h2 class="text-gray-800 font-semibold text-2xl mt-8 md:mt-16">Lorem ipsum dolor sit</h2>
+          <p class="text-gray-700 font-normal text-lg mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+            quibusdam reprehenderit, eveniet porro in sed veritatis tempore eius. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Distinctio totam, est similique deserunt aliquam doloremque.</p>
+          <button
+            class="rounded w-full md:w-36 h-12 mt-5 bg-pink-500 text-white text-lg font-semibold hover:bg-red-600 hover:text-white">
+            Subscribe
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--about section end -->
+
+  <!--subcription section start -->
+  <section id="subcription">
+    <div class="px-10 max-h-lvh">
+      <div class="bg-teal-100 py-10 flex justify-center">
+        <div class="text-center w-full px-4 sm:px-6 lg:px-8">
+          <h2 class="text-2xl sm:text-3xl text-base-100 font-semibold">Subscribe</h2>
+          <hr class="border-t-2 border-gray-500 w-16 mx-auto my-4">
+          <p class="text-gray-700 mb-6 text-sm sm:text-base">
+            Subscribe to our newsletter to stay updated every moment
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-2">
+            <input type="email" placeholder="Enter a valid email address"
+              class="border border-gray-300 rounded-lg sm:rounded-l-lg sm:rounded-r-none px-4 py-2 w-full sm:w-64 focus:outline-none" />
+            <button
+              class="bg-pink-500 text-gray-800 px-6 py-2 rounded-lg sm:rounded-r-lg sm:rounded-l-none w-full sm:w-auto hover:bg-rose-300">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--subcription section end -->
+
+  <!--footer section start -->
+  <section id="footer">
+    <footer class="bg-base-100">
+      <div class="footer p-8 text-white grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <nav>
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Contuct</h6>
+          <a class="link link-hover">Email</a>
+          <a class="link link-hover">Number</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Social</h6>
+          <div class="grid grid-flow-col gap-4">
+            <a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                </path>
+              </svg>
+            </a>
+            <a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                </path>
+              </svg>
+            </a>
+            <a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </div>
+      <div class="text-center pb-3">
+        <aside>
+          <p>Copyright © All right reserved by ACME Industries Ltd</p>
+        </aside>
+      </div>
+    </footer>
+  </section>
+  <!--footer section end -->
+</body>
+
+</html>
