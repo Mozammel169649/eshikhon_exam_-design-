@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>first_exam</title>
+  <title>product_details</title>
   <link rel="icon" href="../image/logo.jpg" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- DaisyUI CDN -->
@@ -24,8 +24,8 @@
           </div>
           <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
             <li><a href="./product.html">Product</a></li>
-            <li><a href="#about" >About</a></li>
-            <li><a>Contuct</a></li>
+            <li><a>About</a></li>
+            <li><a href="./contuct.html">Contuct</a></li>
           </ul>
         </div>
         <a href="/" class="btn btn-ghost text-xl text-base-100"><img class="h-11 w-11 rounded-full"
@@ -33,9 +33,9 @@
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1 text-base-100">
-          <li><a href="./product.html">Product</a></li>
-          <li><a href="#about" >About</a></li>
-          <li><a>Contuct</a></li>
+            <li><a href="./product.html">Product</a></li>
+            <li><a>About</a></li>
+            <li><a href="./contuct.html">Contuct</a></li>
         </ul>
       </div>
       <div class="navbar-end">
@@ -63,81 +63,41 @@
   </section>
   <!--header section end -->
 
-  <!--contuct section start -->
-  <section id="contuct">
+  <!--details section start -->
+  <section id="details">
     <div class="px-10 min-h-auto">
-      <div class="bg-gray-50 flex justify-center py-12 px-4 sm:px-6 lg:px-8 mt-5">
-        <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-xl">
-          <!-- Heading -->
-          <h2 class="text-3xl font-semibold text-gray-800 mb-4 text-center sm:text-left">Contact Us</h2>
-          <p class="text-gray-500 mb-6 text-center sm:text-left">Please fill this form in a decent manner</p>
-      
-          <!-- Form -->
-          <form action="#" method="POST" class="space-y-6">
-            <!-- Full Name (First Name & Last Name) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="first-name" class="block text-sm font-medium text-gray-700">First Name *</label>
-                <input
-                  type="text"
-                  name="first-name"
-                  id="first-name"
-                  class="mt-1 block w-full rounded-md border border-gray-300 shadow-sm p-2 focus:border-blue-500 focus:ring focus:ring-blue-200"
-                  placeholder="First Name"
-                  required
-                />
+        <div class="py-12 px-4 lg:px-24">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+              <!-- Image Section -->
+              <div class="w-full lg:w-1/2">
+                <img class="w-full h-auto object-cover" src="../image/1.jpg" alt="Wooden Bowl">
+                <p class="mt-2 text-gray-500 text-sm">wooden-design-salad-bowl</p>
               </div>
-              <div>
-                <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name *</label>
-                <input
-                  type="text"
-                  name="last-name"
-                  id="last-name"
-                  class="mt-1 block w-full rounded-md border border-gray-300 shadow-sm p-2 focus:border-blue-500 focus:ring focus:ring-blue-200"
-                  placeholder="Last Name"
-                  required
-                />
+          
+              <!-- Product Info Section -->
+              <div class="w-full lg:w-1/2">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Handmade Wooden Bowl</h2>
+                <p class="text-2xl font-semibold text-gray-800 mb-4">32.99 €</p>
+          
+                <label for="size" class="text-gray-600 block mb-2">Size</label>
+                <select id="size" class="w-full p-2 border border-gray-300 rounded-lg mb-4">
+                  <option>Small</option>
+                  <option>Medium</option>
+                  <option>Large</option>
+                </select>
+          
+                <p class="text-gray-600 mb-6">
+                  This is where you should describe the product. Tell your website visitors what’s special about it, why
+                  they should have this, and maybe provide any other bit of info you feel is important.
+                </p>
+          
+                <button class="bg-pink-500 text-white py-3 px-6 rounded-lg w-full hover:bg-gray-800 transition duration-300">
+                  Add to Cart
+                </button>
               </div>
             </div>
-      
-            <!-- E-mail -->
-            <div>
-              <label for="email" class="block text-sm font-medium text-gray-700">E-mail *</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="mt-1 block w-full rounded-md border border-gray-300 shadow-sm p-2 focus:border-blue-500 focus:ring focus:ring-blue-200"
-                placeholder="example@example.com"
-                required
-              />
-            </div>
-      
-            <!-- Message -->
-            <div>
-              <label for="message" class="block text-sm font-medium text-gray-700">Message *</label>
-              <textarea
-                name="message"
-                id="message"
-                rows="4"
-                class="mt-1 block w-full rounded-md border border-gray-300 shadow-sm p-2 focus:border-blue-500 focus:ring focus:ring-blue-200"
-                placeholder="Your message..."
-                required
-              ></textarea>
-            </div>
-      
-            <!-- Submit Button -->
-            <div class="text-center">
-              <button
-                type="submit"
-                class="bg-black text-white font-bold py-2 px-6 rounded-md hover:bg-gray-800 transition-colors w-full sm:w-auto"
-              >
-                SUBMIT
-              </button>
-            </div>
-          </form>
         </div>
-    </div>
+          
       
     </div>
   </section>

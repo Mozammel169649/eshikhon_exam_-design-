@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +34,7 @@
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1 text-base-100">
-          <li><a href="./assets/pages/product.html" >Product</a></li>
+          <li><a href="./assets/pages/product.html">Product</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="./assets/pages/contuct.html">Contuct</a></li>
         </ul>
@@ -47,7 +48,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
-              <span class="badge badge-sm indicator-item">0</span>
+              <span class="badge badge-sm border-none bg-pink-500 indicator-item text-white">0</span>
             </div>
           </div>
         </div>
@@ -78,7 +79,7 @@
               Stay consistent, embrace challenges, and never stop learning from failures.
             </h2>
             <button
-              class="rounded justify-center w-36 h-12  bg-pink-500 text-base-100 text-2xl font-semibold hover:bg-base-100 hover:text-white">subscribe</button>
+              class="rounded justify-center w-36 h-12  bg-pink-500 text-white text-2xl font-semibold hover:bg-base-100 hover:text-white">subscribe</button>
           </div>
 
           <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -96,7 +97,8 @@
               Stay consistent,
               embrace challenges, and never stop learning from failures.</h2>
             <button
-              class="rounded justify-center w-36 h-12 bg-pink-500 text-base-100 text-2xl font-semibold hover:bg-base-100 hover:text-white">subscribe</button>
+              class="rounded justify-center w-36 h-12 bg-pink-500 text-base-100 text-2xl font-semibold hover:bg-base-100 hover:text-white">subscribe
+            </button>
           </div>
 
           <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -132,93 +134,117 @@
   <section id="product">
     <div class="px-10 min-h-auto">
       <h2 class="text-base-100 text-3xl mt-8 font-semibold  text-center">Products</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 items-center justify-center m-auto">
+      <div
+        class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 items-center justify-center m-auto">
         <!-- Card 1 -->
-        <div class="card card-compact bg-base-100 w-80 shadow-xl ">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl ">
+          <figure class="bg-white">
+            <img class="h-48" src="./assets/image/1.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
-              <p class=" pt-3 text-white font-sans font-semibold text-2xl">Price : <span
+              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
                   class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+              <a href="./assets/pages/product_details.html">
+                <button class="btn bg-pink-500 text-white w-30 sm:w-30">View Card</button>
+              </a>
+
             </div>
           </div>
         </div>
-        <div class="card card-compact bg-base-100 w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
+          <figure class="bg-white">
+            <img class="h-48" src="./assets/image/2.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
-              <p class=" pt-3 text-white font-sans font-semibold text-2xl">Price : <span
+              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
                   class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+              <a href="./assets/pages/product_details.html">
+                <button class="btn bg-pink-500 text-white w-30 sm:w-30">View Card</button>
+              </a>
             </div>
           </div>
         </div>
-        <div class="card card-compact bg-base-100 w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-          </figure>
+        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
+          <figure class="bg-white">
+            <img class="h-48" src="./assets/image/3.jpg" alt="Shoes" />
+          </figure class="bg-white">
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
-              <p class=" pt-3 text-white font-sans font-semibold text-2xl">Price : <span
+              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
                   class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+              <a href="./assets/pages/product_details.html">
+                <button class="btn bg-pink-500 text-white w-30 sm:w-30">View Card</button>
+              </a>
             </div>
           </div>
         </div>
-        <div class="card card-compact bg-base-100 w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
+          <figure class="bg-white">
+            <img class="h-48" src="./assets/image/4.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
-              <p class=" pt-3 text-white font-sans font-semibold text-2xl">Price : <span
+              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
                   class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+              <a href="./assets/pages/product_details.html">
+                <button class="btn bg-pink-500 text-white w-30 sm:w-30">View Card</button>
+              </a>
             </div>
           </div>
         </div>
-        <div class="card card-compact bg-base-100 w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
+          <figure class="bg-white">
+            <img class="h-48" src="./assets/image/5.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
-              <p class=" pt-3 text-white font-sans font-semibold text-2xl">Price : <span
+              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
                   class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+              <a href="./assets/pages/product_details.html">
+                <button class="btn bg-pink-500 text-white w-30 sm:w-30">View Card</button>
+              </a>
             </div>
           </div>
         </div>
-        <div class="card card-compact bg-base-100 w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
+          <figure class="bg-white">
+            <img class="h-48" src="./assets/image/6.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
-              <p class=" pt-3 text-white font-sans font-semibold text-2xl">Price : <span
+              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
                   class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+              <a href="./assets/pages/product_details.html">
+                <button class="btn bg-pink-500 text-white w-30 sm:w-30">View Card</button>
+              </a>
             </div>
           </div>
         </div>
       </div>
+      <div class=" float-end pt-5">
+        <a href="./assets/pages/product.html">
+          <button
+            class="rounded w-20 h-8 bg-pink-500 text-white text-1xl font-semibold hover:bg-base-100 hover:text-white">View
+            All
+          </button>
+        </a>
+
+      </div>
+
     </div>
   </section>
   <!--product section end -->
@@ -227,19 +253,19 @@
   <section id="Category">
     <div class="px-10 min-h-auto">
       <h2 class="text-base-100 text-3xl mt-8 font-semibold  text-center">Category</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 justify-between">
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 justify-between">
         <!-- Card 1 -->
-        <div class="card bg-base-100 w-60 shadow-xl">
+        <div class="card bg-base-100 w-52 sm:w-60 shadow-xl">
           <figure>
             <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"
               class="rounded-xl w-full h-44" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
           </div>
         </div>
         <!-- Card 2 -->
-        <div class="card bg-base-100 w-60 shadow-xl">
+        <div class="card bg-base-100 w-52 sm:w-60 shadow-xl">
           <figure>
             <img src="./assets/image/laptop.jpeg" alt="Laptop" class="rounded-xl w-full h-44" />
           </figure>
@@ -248,7 +274,7 @@
           </div>
         </div>
         <!-- Card 3 -->
-        <div class="card bg-base-100 w-60 shadow-xl">
+        <div class="card bg-base-100 w-52 sm:w-60 shadow-xl">
           <figure>
             <img src="./assets/image/phone.jpg" alt="phone" class="rounded-xl w-full h-44" />
           </figure>
@@ -257,7 +283,7 @@
           </div>
         </div>
         <!-- Card 4 -->
-        <div class="card bg-base-100 w-60 shadow-xl">
+        <div class="card bg-base-100 w-52 sm:w-60 shadow-xl">
           <figure>
             <img src="./assets/image/headphone.jpg" alt="headphone" class="rounded-xl w-full h-44" />
           </figure>
@@ -291,7 +317,7 @@
             quibusdam reprehenderit, eveniet porro in sed veritatis tempore eius. Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Distinctio totam, est similique deserunt aliquam doloremque.</p>
           <button
-            class="rounded w-full md:w-36 h-12 mt-5 bg-pink-500 text-white text-lg font-semibold hover:bg-red-600 hover:text-white">
+            class="rounded w-full md:w-36 h-12 mt-5 bg-pink-500 text-white text-lg font-semibold hover:bg-base-300">
             Subscribe
           </button>
         </div>
@@ -315,7 +341,7 @@
             <input type="email" placeholder="Enter a valid email address"
               class="border border-gray-300 rounded-lg sm:rounded-l-lg sm:rounded-r-none px-4 py-2 w-full sm:w-64 focus:outline-none" />
             <button
-              class="bg-pink-500 text-gray-800 px-6 py-2 rounded-lg sm:rounded-r-lg sm:rounded-l-none w-full sm:w-auto hover:bg-rose-300">
+              class="bg-pink-500 text-white px-6 py-2 rounded-lg sm:rounded-r-lg sm:rounded-l-none w-full sm:w-auto hover:bg-base-300">
               Submit
             </button>
           </div>
@@ -328,7 +354,7 @@
   <!--footer section start -->
   <section id="footer">
     <footer class="bg-base-100">
-      <div class="footer p-8 text-white grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="footer p-8 text-white grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8">
         <nav>
           <h6 class="footer-title">Services</h6>
           <a class="link link-hover">Branding</a>
@@ -379,6 +405,8 @@
     </footer>
   </section>
   <!--footer section end -->
+
+  <script src="./index.js"></script>
 </body>
 
 </html>
