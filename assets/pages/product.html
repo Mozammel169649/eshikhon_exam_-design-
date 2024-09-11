@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +48,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
-              <span class="badge badge-sm indicator-item bg-pink-500 border-none text-white">0</span>
+              <span id="quantity" class="badge badge-sm indicator-item bg-pink-500 border-none text-white">0</span>
             </div>
           </div>
         </div>
@@ -66,398 +67,299 @@
   <!--product section start -->
   <section id="product">
     <div class="px-10 min-h-auto">
-      <h2 class="text-base-100 text-3xl mt-8 font-semibold  text-center">ALL Products</h2>
-      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 items-center justify-center m-auto">
+      <h2 class="text-base-100 text-3xl mt-8 font-semibold  text-center">Products</h2>
+      <h3 class="text-end mt-4 text-pink-500 text-2xl mr-36">Totle Price = <span id="totlePrice">0</span></h3>
+      <div
+        class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 items-center justify-center m-auto">
         <!-- Card 1 -->
         <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl ">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          <figure class="bg-white">
+            <img class="h-48" src="../image/1.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
               <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+                  class=" text-pink-500">37</span> $</p>
+
+               <button class="btn bg-pink-500 text-white w-30 sm:w-30" onclick="addCard(37)">Add Card</button>
+
+
             </div>
           </div>
         </div>
         <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          <figure class="bg-white">
+            <img class="h-48" src="../image/2.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
               <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+                  class=" text-pink-500">52</span> $</p>
+
+               <button class="btn bg-pink-500 text-white w-30 sm:w-30" onclick="addCard(52)">Add Card</button>
+
             </div>
           </div>
         </div>
         <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-          </figure>
+          <figure class="bg-white">
+            <img class="h-48" src="../image/3.jpg" alt="Shoes" />
+          </figure class="bg-white">
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
               <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+                  class=" text-pink-500">34</span> $</p>
+
+               <button class="btn bg-pink-500 text-white w-30 sm:w-30" onclick="addCard(34)">Add Card</button>
+
             </div>
           </div>
         </div>
         <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          <figure class="bg-white">
+            <img class="h-48" src="../image/4.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
               <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+                  class=" text-pink-500">32</span> $</p>
+
+               <button class="btn bg-pink-500 text-white w-30 sm:w-30" onclick="addCard(32)">Add Card</button>
+
             </div>
           </div>
         </div>
         <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          <figure class="bg-white">
+            <img class="h-48" src="../image/5.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
               <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+                  class=" text-pink-500">29</span> $</p>
+
+               <button class="btn bg-pink-500 text-white w-30 sm:w-30" onclick="addCard(29)">Add Card</button>
+
             </div>
           </div>
         </div>
         <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          <figure class="bg-white">
+            <img class="h-48" src="../image/6.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-around">
+              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
+                  class=" text-pink-500">45</span> $</p>
+
+               <button class="btn bg-pink-500 text-white w-30 sm:w-30" onclick="addCard(45)">Add Card</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl ">
+          <figure class="bg-white">
+            <img class="h-48" src="../image/1.jpg" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
               <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
                   class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+
+               <button class="btn bg-pink-500 text-white w-30 sm:w-30" onclick="addCard(40)">Add Card</button>
+
+
             </div>
           </div>
         </div>
         <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          <figure class="bg-white">
+            <img class="h-48" src="../image/2.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
               <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+                  class=" text-pink-500">42</span> $</p>
+
+               <button class="btn bg-pink-500 text-white w-30 sm:w-30" onclick="addCard(42)">Add Card</button>
+
             </div>
           </div>
         </div>
         <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-          </figure>
+          <figure class="bg-white">
+            <img class="h-48" src="../image/3.jpg" alt="Shoes" />
+          </figure class="bg-white">
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
               <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+                  class=" text-pink-500">49</span> $</p>
+
+               <button class="btn bg-pink-500 text-white w-30 sm:w-30" onclick="addCard(49)">Add Card</button>
+
             </div>
           </div>
         </div>
         <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          <figure class="bg-white">
+            <img class="h-48" src="../image/4.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
               <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+                  class=" text-pink-500">46</span> $</p>
+
+               <button class="btn bg-pink-500 text-white w-30 sm:w-30" onclick="addCard(46)">Add Card</button>
+
             </div>
           </div>
         </div>
         <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          <figure class="bg-white">
+            <img class="h-48" src="../image/5.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
               <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
                   class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+
+               <button class="btn bg-pink-500 text-white w-30 sm:w-30" onclick="addCard(40)">Add Card</button>
+
             </div>
           </div>
         </div>
         <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          <figure class="bg-white">
+            <img class="h-48" src="../image/6.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
               <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+                  class=" text-pink-500">83</span> $</p>
+
+               <button class="btn bg-pink-500 text-white w-30 sm:w-30" onclick="addCard(83)">Add Card</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl ">
+          <figure class="bg-white">
+            <img class="h-48" src="../image/1.jpg" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Watch</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-around">
+              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
+                  class=" text-pink-500">45</span> $</p>
+
+               <button class="btn bg-pink-500 text-white w-30 sm:w-30" onclick="addCard(45)">Add Card</button>
+
+
             </div>
           </div>
         </div>
         <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          <figure class="bg-white">
+            <img class="h-48" src="../image/2.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
               <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+                  class=" text-pink-500">42</span> $</p>
+
+               <button class="btn bg-pink-500 text-white w-30 sm:w-30" onclick="addCard(42)">Add Card</button>
+
             </div>
           </div>
         </div>
         <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-          </figure>
+          <figure class="bg-white">
+            <img class="h-48" src="../image/3.jpg" alt="Shoes" />
+          </figure class="bg-white">
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
               <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+                  class=" text-pink-500">43</span> $</p>
+
+               <button class="btn bg-pink-500 text-white w-30 sm:w-30" onclick="addCard(43)">Add Card</button>
+
             </div>
           </div>
         </div>
         <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          <figure class="bg-white">
+            <img class="h-48" src="../image/4.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
               <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+                  class=" text-pink-500">53</span> $</p>
+
+               <button class="btn bg-pink-500 text-white w-30 sm:w-30" onclick="addCard(53)">Add Card</button>
+
             </div>
           </div>
         </div>
         <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          <figure class="bg-white">
+            <img class="h-48" src="../image/5.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
               <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+                  class=" text-pink-500">27</span> $</p>
+
+               <button class="btn bg-pink-500 text-white w-30 sm:w-30" onclick="addCard(27)">Add Card</button>
+
             </div>
           </div>
         </div>
         <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          <figure class="bg-white">
+            <img class="h-48" src="../image/6.jpg" alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
+            <h2 class="card-title">Watch</h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div class="card-actions justify-around">
               <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-around">
-              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-around">
-              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-around">
-              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-around">
-              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-around">
-              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-around">
-              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-around">
-              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-around">
-              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-around">
-              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-around">
-              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-around">
-              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
-            </div>
-          </div>
-        </div>
-        <div class="card card-compact bg-base-100 w-52 sm:w-80 shadow-xl">
-          <figure>
-            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-around">
-              <p class=" pt-3 text-white font-sans font-semibold text-1xl sm:text-2xl">Price : <span
-                  class=" text-pink-500">40</span> $</p>
-              <button class="btn btn-primary">Add Card</button>
+                  class=" text-pink-500">56</span> $</p>
+
+              <button class="btn bg-pink-500 text-white w-30 sm:w-30" onclick="addCard(56)">Add Card</button>
+
             </div>
           </div>
         </div>
@@ -520,6 +422,7 @@
     </footer>
   </section>
   <!--footer section end -->
+  <script src="../../index.js"></script>
 </body>
 
 </html>
